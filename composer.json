@@ -1,0 +1,48 @@
+{
+  "name": "pollen-solutions/wp-comment",
+  "description": "Pollen Solutions - Wordpress Comment Component - Abstraction lawer of WP_Comment object.",
+  "homepage": "https://www.presstify.com/pollen-solutions/wp-comment/",
+  "keywords": [
+    "pollen-solutions",
+    "component",
+    "wordpress",
+    "comment"
+  ],
+  "time": "2021-08-11",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jordy Manner",
+      "email": "jordy@presstify.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "pollen-solutions/support": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pollen\\WpComment\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pollen\\WpComment\\Test\\": "tests"
+    }
+  },
+  "suggest": {
+    "pollen-solutions/container" : "Pollen Container Component - PSR-11 ready Dependencies Injection Container",
+    "pollen-solutions/wp-post": "Pollen Solutions - Wordpress Post Component - Abstraction lawer of WP_Post object.",
+    "pollen-solutions/wp-user": "Pollen Solutions - Wordpress User Component - Abstraction lawer of WP_User object."
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  }
+}
